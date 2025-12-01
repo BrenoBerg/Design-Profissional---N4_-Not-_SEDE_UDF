@@ -1,0 +1,94 @@
+Curriculo latex
+
+%------------------------------------------------------------
+% Currículo em LaTeX - Breno Eduardo Campos de Carvalho
+%------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+% Pacotes básicos
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Margens e estilo
+\geometry{margin=2cm}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+% Cores
+\definecolor{primary}{HTML}{0B5EA8}
+
+% Separador estilizado
+\newcommand{\sectionline}{\noindent\color{primary}\rule{\linewidth}{0.7pt}}
+
+% Cabeçalho principal
+\newcommand{\maintitle}[2]{
+  {\bfseries\Large #1}\hfill{\small #2}\
+
+\[-2pt]
+  \sectionline\vspace{6pt}
+}
+
+% Cabeçalho de seção
+\newcommand{\cvsection}[1]{
+  \vspace{6pt}
+  {\bfseries\color{primary} #1}\par
+  \vspace{2pt}
+}
+
+\begin{document}
+
+%------------------------------------------------------------
+% IDENTIFICAÇÃO
+%------------------------------------------------------------
+\maintitle{Breno Eduardo Campos}{\href{mailto:brenoeduardocampos@hotmail.com}{brenoeduardocampos@hotmail.com.com} \;|\; \href{https://github.com/BrenoBerg}{github.com/BrenoBerg}}
+
+\cvsection{Resumo}
+Atualmente cursando Análise e Desenvolvimento de Sistemas na UDF.  
+Interesse em desenvolvimento de software, lógica de programação e boas práticas de código.  
+Busco oportunidades para aplicar conhecimentos adquiridos e evoluir como profissional na área de tecnologia.
+
+%------------------------------------------------------------
+% EDUCAÇÃO
+%------------------------------------------------------------
+\cvsection{Educação}
+\textbf{Centro Universitário UDF} \hfill {\small 2024 -- Atual}\\
+Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas
+
+%------------------------------------------------------------
+% HABILIDADES
+%------------------------------------------------------------
+\cvsection{Habilidades}
+- Conhecimentos básicos em lógica de programação  
+- Noções de desenvolvimento em Python e Java  
+- Familiaridade com HTML, CSS e JavaScript  
+- Uso de Git e GitHub para versionamento de código  
+- Interesse em aprender frameworks e bancos de dados relacionais
+
+%------------------------------------------------------------
+% PROJETOS ACADÊMICOS
+%------------------------------------------------------------
+\cvsection{Projetos}
+- Exercícios de programação orientada a objetos em Java  
+- Pequenos scripts em Python para automação de tarefas  
+- Criação de páginas simples em HTML e CSS como prática de front-end
+
+%------------------------------------------------------------
+% INFORMAÇÕES ADICIONAIS
+%------------------------------------------------------------
+\cvsection{Informações adicionais}
+- Participação em grupos de estudo e comunidades de tecnologia  
+- Interesse em estágio ou posições de nível júnior para desenvolvimento de sistemas  
+- Disponibilidade para aprendizado contínuo e trabalho em equipe
+
+\end{document}
